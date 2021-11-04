@@ -1,0 +1,84 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.applitools.android.ufg.espresso"
+        minSdk 26
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // This is needed to exclude duplicated META-INF
+    packagingOptions {
+        exclude 'META-INF/**'
+        exclude 'changelog.xml'
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // UFG libs - start
+    implementation("com.applitools:common-androidx:1.0.16") {
+        exclude group: 'com.applitools', module: 'eyes-android-common'
+        exclude group: 'com.applitools', module: 'eyes-android-components'
+        exclude group: 'com.applitools', module: 'eyes-android-components-androidx'
+    }
+    implementation("com.applitools:vhs-androidx:1.0.16") {
+        exclude module: 'commons-logging'
+        exclude group: 'com.applitools', module: 'eyes-android-common'
+        exclude group: 'com.applitools', module: 'eyes-android-components'
+        exclude group: 'com.applitools', module: 'eyes-android-components-androidx'
+    }
+    implementation ("com.applitools:eyes-common-java3:3.208.2") {
+        exclude group: 'com.applitools', module: 'eyes-connectivity-java3-jersey2x'
+        exclude module: 'commons-logging'
+    }
+    implementation ("com.applitools:eyes-connectivity-java3-net:3.208.2" ){
+        exclude module: 'commons-logging'
+    }
+    // UFG libs - end
+
+    // Eyes Espresso - start
+    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.0-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-common:4.10.0-beta'
+    androidTestImplementation 'com.applitools:eyes-android-core:4.10.0-beta'
+    androidTestImplementation 'com.applitools:eyes-android-components:4.10.0-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.0-beta@aar'
+    // Eyes Espresso - end
+}
