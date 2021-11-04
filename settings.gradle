@@ -16,5 +16,5 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "AndroidUfgEspresso"
+rootProject.name = "AndroidUfgEspressoQuickstart"
 include ':app'
