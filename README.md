@@ -122,3 +122,14 @@ public class LoginActivityTest {
     }
 }
 ```
+
+## Possible issues
+
+We can have duplicated META files from or libraries. To exclude them next lines should be added into the application `build.gradle` file, `android` section. 
+```
+// This is needed to exclude duplicated META-INF
+packagingOptions {
+    exclude 'META-INF/**'
+    exclude 'changelog.xml'
+}
+```
