@@ -23,7 +23,7 @@ maven {
 Then add the following dependencies to your application `build.gradle` file
 ```
 // UFG libs - start
-implementation("com.applitools:vhs-androidx:1.0.22") {
+implementation("com.applitools:vhs-androidx:1.0.26") {
     exclude module: 'commons-logging'
     exclude group: 'com.applitools', module: 'eyes-android-common'
     exclude group: 'com.applitools', module: 'eyes-android-components'
@@ -112,7 +112,7 @@ public class LoginActivityTest {
             eyes.closeAsync();
         } finally {
             eyes.abortIfNotClosed();
-            runner.getAllTestResultsImpl();
+            runner.getAllTestResults();
         }
     }
 }
