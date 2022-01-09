@@ -54,7 +54,7 @@ public class LoginActivityTest {
             eyes.closeAsync();
         } finally {
             eyes.abortIfNotClosed();
-            runner.getAllTestResultsImpl();
+            runner.getAllTestResults();
         }
     }
 }
