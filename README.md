@@ -34,11 +34,11 @@ implementation ("com.applitools:eyes-connectivity-java3-net:3.208.2" ){
 // UFG libs - end
 
 // Eyes Espresso - start
-androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.2-beta@aar'
-androidTestImplementation 'com.applitools:eyes-android-common:4.10.2-beta'
-androidTestImplementation 'com.applitools:eyes-android-core:4.10.2-beta'
-androidTestImplementation 'com.applitools:eyes-android-components:4.10.2-beta@aar'
-androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.2-beta@aar'
+androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.3-beta@aar'
+androidTestImplementation 'com.applitools:eyes-android-common:4.10.3-beta'
+androidTestImplementation 'com.applitools:eyes-android-core:4.10.3-beta'
+androidTestImplementation 'com.applitools:eyes-android-components:4.10.3-beta@aar'
+androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.3-beta@aar'
 // Eyes Espresso - end
 ```
 
