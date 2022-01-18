@@ -23,7 +23,7 @@ maven {
 Then add the following dependencies to your application `build.gradle` file
 ```
 // UFG libs - start
-implementation("com.applitools:vhs-androidx:1.0.28
+implementation("com.applitools:vhs-androidx:1.0.28")
 implementation ("com.applitools:eyes-common-java3:3.208.2") {
     exclude group: 'com.applitools', module: 'eyes-connectivity-java3-jersey2x'
     exclude module: 'commons-logging'
