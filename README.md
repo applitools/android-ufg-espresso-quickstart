@@ -50,7 +50,7 @@ Before running the test, make sure to set the API key that identifies your accou
 You can find your API key under the user menu located at the right hand side of the test manager toolbar.
 If you don't yet have an account [create it now](https://applitools.com/users/register) to obtain your key.
 
-### Example
+### Java Example
 
 ```
 import androidx.test.core.app.ActivityScenario;
@@ -112,6 +112,9 @@ public class LoginActivityTest {
     }
 }
 ```
+
+### Kotlin Example
+
 
 ## Possible issues
 
