@@ -114,6 +114,7 @@ public class LoginActivityTest {
 ```
 
 ### Kotlin Example
+See KotlinTest.kt
 
 
 ## Possible issues
