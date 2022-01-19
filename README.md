@@ -38,11 +38,11 @@ Then add the following dependencies to your application `build.gradle` file
     // UFG libs - end
 
     // Eyes Espresso - start
-    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.4-beta@aar'
-    androidTestImplementation 'com.applitools:eyes-android-common:4.10.4-beta'
-    androidTestImplementation 'com.applitools:eyes-android-core:4.10.4-beta'
-    androidTestImplementation 'com.applitools:eyes-android-components:4.10.4-beta@aar'
-    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.4-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.5-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-common:4.10.5-beta'
+    androidTestImplementation 'com.applitools:eyes-android-core:4.10.5-beta'
+    androidTestImplementation 'com.applitools:eyes-android-components:4.10.5-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.5-beta@aar'
     // Eyes Espresso - end
 ```
 
