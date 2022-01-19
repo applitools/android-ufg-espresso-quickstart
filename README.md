@@ -22,24 +22,28 @@ maven {
 
 Then add the following dependencies to your application `build.gradle` file
 ```
-// UFG libs - start
-implementation("com.applitools:vhs-androidx:1.0.28")
-implementation ("com.applitools:eyes-common-java3:3.208.2") {
-    exclude group: 'com.applitools', module: 'eyes-connectivity-java3-jersey2x'
-    exclude module: 'commons-logging'
-}
-implementation ("com.applitools:eyes-connectivity-java3-net:3.208.2" ){
-    exclude module: 'commons-logging'
-}
-// UFG libs - end
+    // UFG libs - start
+    implementation("com.applitools:vhs-androidx:1.0.31"){
+        exclude group: 'com.applitools', module: 'eyes-android-common'
+        exclude group: 'com.applitools', module: 'eyes-android-components'
+        exclude group: 'com.applitools', module: 'eyes-android-components-androidx'
+    }
+    implementation ("com.applitools:eyes-common-java3:3.208.2") {
+        exclude group: 'com.applitools', module: 'eyes-connectivity-java3-jersey2x'
+        exclude module: 'commons-logging'
+    }
+    implementation ("com.applitools:eyes-connectivity-java3-net:3.208.2" ){
+        exclude module: 'commons-logging'
+    }
+    // UFG libs - end
 
-// Eyes Espresso - start
-androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.3-beta@aar'
-androidTestImplementation 'com.applitools:eyes-android-common:4.10.3-beta'
-androidTestImplementation 'com.applitools:eyes-android-core:4.10.3-beta'
-androidTestImplementation 'com.applitools:eyes-android-components:4.10.3-beta@aar'
-androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.3-beta@aar'
-// Eyes Espresso - end
+    // Eyes Espresso - start
+    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.4-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-common:4.10.4-beta'
+    androidTestImplementation 'com.applitools:eyes-android-core:4.10.4-beta'
+    androidTestImplementation 'com.applitools:eyes-android-components:4.10.4-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.4-beta@aar'
+    // Eyes Espresso - end
 ```
 
 ### Write and run first test
