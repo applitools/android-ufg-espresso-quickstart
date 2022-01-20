@@ -35,8 +35,7 @@ class KotlinTest {
             .addMobileDevice(AndroidDeviceInfo(AndroidDeviceName.Pixel_4))
             .addMobileDevice(
                 AndroidDeviceInfo(
-                    AndroidDeviceName.Pixel_4_XL,
-                    ScreenOrientation.Landscape
+                    AndroidDeviceName.Pixel_4_XL
                 )
             )
             .addMobileDevice(
@@ -53,7 +52,7 @@ class KotlinTest {
             eyes.closeAsync()
         } finally {
             eyes.abortIfNotClosed()
-            runner.allTestResultsImpl
+            runner.allTestResults
         }
     }
 }
