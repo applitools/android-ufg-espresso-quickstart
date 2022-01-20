@@ -23,7 +23,7 @@ maven {
 Then add the following dependencies to your application `build.gradle` file
 ```
     // UFG libs - start
-    implementation("com.applitools:vhs-androidx:1.0.31"){
+    implementation("com.applitools:vhs-androidx:1.0.30"){
         exclude group: 'com.applitools', module: 'eyes-android-common'
         exclude group: 'com.applitools', module: 'eyes-android-components'
         exclude group: 'com.applitools', module: 'eyes-android-components-androidx'
@@ -38,11 +38,11 @@ Then add the following dependencies to your application `build.gradle` file
     // UFG libs - end
 
     // Eyes Espresso - start
-    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.5-beta@aar'
-    androidTestImplementation 'com.applitools:eyes-android-common:4.10.5-beta'
-    androidTestImplementation 'com.applitools:eyes-android-core:4.10.5-beta'
-    androidTestImplementation 'com.applitools:eyes-android-components:4.10.5-beta@aar'
-    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.5-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.6-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-common:4.10.6-beta'
+    androidTestImplementation 'com.applitools:eyes-android-core:4.10.6-beta'
+    androidTestImplementation 'com.applitools:eyes-android-components:4.10.6-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.6-beta@aar'
     // Eyes Espresso - end
 ```
 
