@@ -42,8 +42,8 @@ public class LoginActivityTest {
         eyes.setComponentsProvider(new AndroidXComponentsProvider());
         eyes.setConfiguration(eyes.getConfiguration()
                 .addMobileDevice(new AndroidDeviceInfo(AndroidDeviceName.Pixel_4))
-                .addMobileDevice(new AndroidDeviceInfo(AndroidDeviceName.Pixel_4_XL, ScreenOrientation.Landscape))
-                .addMobileDevice(new AndroidDeviceInfo(AndroidDeviceName.Pixel_3_XL, ScreenOrientation.Landscape, DeviceAndroidVersion.LATEST)));
+                .addMobileDevice(new AndroidDeviceInfo(AndroidDeviceName.Pixel_4_XL))
+                .addMobileDevice(new AndroidDeviceInfo(AndroidDeviceName.Pixel_3_XL)));
         eyes.setLogHandler(logger.getLogHandler());
 
         try {
