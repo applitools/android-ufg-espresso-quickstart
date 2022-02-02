@@ -40,9 +40,7 @@ class KotlinTest {
             )
             .addMobileDevice(
                 AndroidDeviceInfo(
-                    AndroidDeviceName.Pixel_3_XL,
-                    ScreenOrientation.Landscape,
-                    DeviceAndroidVersion.LATEST
+                    AndroidDeviceName.Pixel_3_XL
                 )
             )
         eyes.logHandler = logger.logHandler
