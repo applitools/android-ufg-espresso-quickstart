@@ -54,12 +54,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // UFG libs - start
-    implementation("com.applitools:common-androidx:1.0.26") {
-        exclude group: 'com.applitools', module: 'eyes-android-common'
-        exclude group: 'com.applitools', module: 'eyes-android-components'
-        exclude group: 'com.applitools', module: 'eyes-android-components-androidx'
-    }
-    implementation("com.applitools:vhs-androidx:1.0.26") {
+    implementation("com.applitools:vhs-androidx:1.0.35") {
         exclude module: 'commons-logging'
         exclude group: 'com.applitools', module: 'eyes-android-common'
         exclude group: 'com.applitools', module: 'eyes-android-components'
@@ -75,10 +70,10 @@ dependencies {
     // UFG libs - end
 
     // Eyes Espresso - start
-    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.1-beta@aar'
-    androidTestImplementation 'com.applitools:eyes-android-common:4.10.1-beta'
-    androidTestImplementation 'com.applitools:eyes-android-core:4.10.1-beta'
-    androidTestImplementation 'com.applitools:eyes-android-components:4.10.1-beta@aar'
-    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.1-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.11-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-common:4.10.11-beta'
+    androidTestImplementation 'com.applitools:eyes-android-core:4.10.11-beta'
+    androidTestImplementation 'com.applitools:eyes-android-components:4.10.11-beta@aar'
+    androidTestImplementation 'com.applitools:eyes-android-components-androidx:4.10.11-beta@aar'
     // Eyes Espresso - end
 }
