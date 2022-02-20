@@ -28,14 +28,6 @@ Then add the following dependencies to your application `build.gradle` file
         exclude group: 'com.applitools', module: 'eyes-android-components'
         exclude group: 'com.applitools', module: 'eyes-android-components-androidx'
     }
-    implementation ("com.applitools:eyes-common-java3:3.208.2") {
-        exclude group: 'com.applitools', module: 'eyes-connectivity-java3-jersey2x'
-        exclude module: 'commons-logging'
-    }
-    implementation ("com.applitools:eyes-connectivity-java3-net:3.208.2" ){
-        exclude module: 'commons-logging'
-    }
-    // UFG libs - end
 
     // Eyes Espresso - start
     androidTestImplementation 'com.applitools:eyes-android-espresso:4.10.11-beta@aar'
