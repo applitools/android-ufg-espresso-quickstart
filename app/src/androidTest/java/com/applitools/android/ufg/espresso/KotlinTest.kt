@@ -4,8 +4,6 @@ import androidx.test.core.app.ActivityScenario
 import com.applitools.android.ufg.espresso.ui.login.LoginActivity
 import com.applitools.eyes.android.common.AndroidDeviceInfo
 import com.applitools.eyes.android.common.AndroidDeviceName
-import com.applitools.eyes.android.common.DeviceAndroidVersion
-import com.applitools.eyes.android.common.ScreenOrientation
 import com.applitools.eyes.android.common.logger.Logger
 import com.applitools.eyes.android.common.logger.StdoutLogHandler
 import com.applitools.eyes.android.components.androidx.AndroidXComponentsProvider
@@ -49,8 +47,8 @@ class KotlinTest {
             eyes.check(Target.window().withName("Check"))
             eyes.closeAsync()
         } finally {
-            eyes.abortIfNotClosed()
             runner.allTestResults
+            eyes.abortIfNotClosed()
         }
     }
 }

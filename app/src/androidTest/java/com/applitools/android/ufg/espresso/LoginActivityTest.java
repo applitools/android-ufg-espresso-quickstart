@@ -53,8 +53,8 @@ public class LoginActivityTest {
 
             eyes.closeAsync();
         } finally {
-            eyes.abortIfNotClosed();
             runner.getAllTestResults();
+            eyes.abortIfNotClosed();
         }
     }
 }
